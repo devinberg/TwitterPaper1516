@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{etoolbox}
+\usepackage{changepage}
+\usepackage{titlesec}
+\usepackage[parfill]{parskip}
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage[numbers,super]{natbib}
+\usepackage{float}
+
+\titleformat*{\section}{\normalsize\bfseries} % Makes section titles 12 pt font
+
+
+%----------------------------------------------------------------------------------------
+%  TITLE SECTION
+%----------------------------------------------------------------------------------------
+\title{\large \textbf{Twitter for Enhanced Engagement in the Engineering Classroom}} % using \large makes the title approximately 14 pt.
+\author{\vspace{-5ex}}
+\author{\normalsize Devin R. Berg\\
+\normalsize bergdev@uwstout.edu\\
+\normalsize Engineering and Technology Department\\\
+\normalsize University of Wisconsin-Stout}
+\date{\vspace{-5ex}} % This leaves the date blank.
+
+\makeatletter % This gets the margins for the title set.
+\patchcmd{\@maketitle}{\begin{center}}{\begin{adjustwidth}{0.5in}{0.5in}\begin{center}}{}{}
+\patchcmd{\@maketitle}{\end{center}}{\end{center}\end{adjustwidth}}{}{}
+\makeatother
+
+\floatstyle{boxed}
+\newfloat{textbox}{htbp}{lop}
+\floatname{textbox}{Textbox}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\raggedright
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%  PAPER CONTENTS
+%----------------------------------------------------------------------------------------
+\section*{Abstract}
+- Sentence or two introducing the area the project is focused on. (What aspect of teaching/learning?)
+- Explicit statement of research question that makes clear what the main factors/variables/assignment/etc. being examined were.
+- Brief review of what was done (2-3 sentences) containing method, measures, evidence collected.
+- Statement of results (what was found or if evidence not yet examined, what analyses are planned)?
+- Brief reflection of what was found or is expected.
+
+These questions were explored over a multi-semester study of student participation in directed Twitter discussions within an engineering mechanics classroom. First, a small cohort of students was used and later the same study was conducted with a large cohort of students. Comparisons will be made between these two cohorts on the basis of active engagement in the assigned tasks, course performance, and student perception of the tasks.
+
+The tasks that students were asked to complete as part of the study involved required weekly postings to Twitter relevant to the topics of discussion in the course that week. With these tasks, it was intended for the student to look beyond their standard homework and relate to the course material in a new way, independent of their textbook or course notes. Similar work by others has demonstrated success in getting students to make the connection between the classroom and the “real world” \cite{hopp_journal_2008}.
+
+The deliverables for these tasks consisted of either a photograph or video, along with a written description, of an object or event that demonstrates the concepts relevant to the week’s course material. The students were also asked to comment on their peer's postings, thus spurring further discussion. Examples of students’ work are presented along with discussion of lessons learned through this study. Evaluation of student learning outcomes will be discussed and comparisons will be made between the small cohort and large cohort groups.
+
+\section*{Introduction}
+Inquiry-based learning is an educational approach that allows the student to take ownership over the education process by self-identifying a problem and formulating their own solution \cite{magnussen_impact_2000, prince_does_2004}. The application of this method of teaching was explored in an introductory mechanics course taken by both engineering and engineering technology students.
+
+The use of Twitter (http://www.twitter.com), a micro-blogging platform, in the higher education classroom has expanded in recent years as educators come to realize the benefits of social media use as a tool for faculty-student communication or for inter-student communication \cite{blessing_using_2012}. While the literature on the use of Twitter in the classroom is emerging, recent studies have found the platform functional for promoting concise expression of ideas, critical reading and writing skills, stronger student-teacher relationships, self-learning in an informal environment, and accountability among other benefits \cite{shiffman_twitter_2012}. Further benefits have been found in relation to asking students to communicate the content of a given course to a broader, general-public audience \cite{junco_effect_2011, ha_influence_2013}. However, at the same time it can be a challenge to promote active participation in this sort of activity due to students’ apprehension about putting themselves out there and being wrong. Similar apprehensions at the instructor level have limited the use of Twitter as a classroom resource \cite{carpenter_how_2014}. Further, using Twitter in the classroom has potential disadvantages such as distracting content, overly constraining character limitations, and privacy concerns \cite{dhir_tweeters_2013}. One hypothesis is that student apprehensions can be overcome by engaging a larger cohort of participants thus creating a sense of anonymity through presence within a large population. Further, the use of a larger participant pool increases the odds of it containing students who drive the online classroom discussion through their active participation. It is expected that the presence of such individuals lowers the barrier to entry for the rest of the students. This effect may be tampered by the limitations on student engagement in classes with large enrollments that have been observed in the literature. \cite{ahlfeldt_measurement_2005}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%  REFERENCE LIST
+%----------------------------------------------------------------------------------------
+\vspace{4\baselineskip}\vspace{-\parskip} % Creaters proper 4 blank line spacing.
+\footnotesize % Makes bibliography 10 pt font.
+\bibliographystyle{unsrtnat} %Can use a different style as long as it is one which uses numbered references in the text.
+\bibliography{refs}
+
+%----------------------------------------------------------------------------------------
+
+
+
+\end{document}
