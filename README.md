@@ -5,7 +5,9 @@ The micro-blogging platform, Twitter, has been employed by some in higher educat
 
 ### Published
 Preprint published: http://www.tjoe.org/?p=30 
+
 Final paper published: http://www.onlineengineeringeducation.com/joee_v6n2a2.pdf
+
 DOI: https://dx.doi.org/10.6084/m9.figshare.2060559
 
 ### Citation
